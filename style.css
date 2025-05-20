@@ -1,3 +1,7 @@
+:root {
+  --brand-orange: #ff6600;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #fdfdfd;
@@ -22,7 +26,7 @@ body {
 }
 
 h1 {
-  color: #ffa500;
+  color: var(--brand-orange);
   margin-bottom: 25px;
   font-size: 28px;
   font-weight: bold;
@@ -47,7 +51,7 @@ input[type="number"] {
   padding: 12px;
   margin-top: 6px;
   border-radius: 6px;
-  border: 1px solid #ffa500;
+  border: 1px solid var(--brand-orange);
   font-size: 16px;
   color: #333;
   background-color: #fffefb;
@@ -56,7 +60,7 @@ input[type="number"] {
 
 select:focus,
 input[type="number"]:focus {
-  border-color: #ffa500;
+  border-color: var(--brand-orange);
   outline: none;
 }
 
@@ -76,7 +80,7 @@ input[type="number"]:focus {
 }
 
 .orange {
-  color: #ffa500;
+  color: var(--brand-orange);
   text-align: end;
 }
 
@@ -113,7 +117,7 @@ input[type="range"] {
   width: 100%;
   height: 4px;
   appearance: none;
-  background: #ffa500;
+  background: var(--brand-orange);
   border-radius: 4px;
   outline: none;
 }
@@ -123,7 +127,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: #ffa500;
+  background: var(--brand-orange);
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -135,7 +139,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: #ffa500;
+  background: var(--brand-orange);
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -143,13 +147,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-  background: #ffa500;
+  background: var(--brand-orange);
   height: 4px;
   border-radius: 4px;
 }
 
 input[type="range"]::-moz-range-track {
-  background: #ffa500;
+  background: var(--brand-orange);
   height: 4px;
   border-radius: 4px;
 }
@@ -168,7 +172,7 @@ input[type="range"]::-moz-range-track {
 }
 
 .savings {
-  background: #ffa500;
+  background: var(--brand-orange);
   color: #fff;
   margin-top: -20px;
   padding: 14px;

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>doyoukare</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,6 +14,7 @@
         class="logo"
       />
       <h1>Overtime Costs vs. KARE</h1>
+
       <div class="form-top">
         <div class="form-group">
           <label for="state">Select Your State</label>
@@ -41,16 +42,13 @@
             <option>North Carolina</option>
             <option>Ohio</option>
             <option>Oklahoma</option>
-            <option>Oregon</option>
             <option>Pennsylvania</option>
             <option>South Carolina</option>
             <option>Tennessee</option>
             <option>Texas</option>
             <option>Virginia</option>
             <option>Washington</option>
-
             <option>Wisconsin</option>
-
             <!-- Add more states as needed -->
           </select>
         </div>
@@ -85,7 +83,7 @@
       <div class="slider-group">
         <div class="slider-label-input">
           <label for="hours">Your Estimated Overtime Hours Per Month</label>
-          <input type="number" id="hoursInput" value="250" />
+          <input type="number" id="hoursInput" value="250" min="0" max="500" />
         </div>
         <input type="range" id="hours" min="0" max="500" value="250" />
       </div>
@@ -93,7 +91,7 @@
       <div class="slider-group">
         <div class="slider-label-input">
           <label for="percentage">% of Overtime to Replace with KARE</label>
-          <input type="number" id="percentInput" value="75" />
+          <input type="number" id="percentInput" value="75" min="0" max="150" />
         </div>
         <input type="range" id="percentage" min="0" max="150" value="75" />
       </div>
@@ -101,8 +99,8 @@
       <div class="results">
         <p>
           Here are the results if you replace
-          <span id="replaceText">50%</span> of your
-          <span id="hourText">100</span> overtime hours per month with KARE.
+          <span id="replaceText">75%</span> of your
+          <span id="hourText">250</span> overtime hours per month with KARE.
         </p>
         <h3>
           Your Monthly Overtime Costs <span id="overtimeCost">$7,734.38</span>
